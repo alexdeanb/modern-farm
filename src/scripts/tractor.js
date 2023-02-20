@@ -7,7 +7,12 @@ import { createWheat } from "./seeds/wheat.js"
 import { addPlant } from "./field.js"
 import { usePlants } from "./field.js"
 
+
+
 export const plantSeeds = (plan) =>{
+    // Loop through each row, then each plant in each row.
+    // Switch statements checks the case of if they are a certain seed type
+    // if so, create a seed, add it to the planted array.
     for(let row of plan){
         for(let plant of row){
             switch (plant){
@@ -32,5 +37,6 @@ export const plantSeeds = (plan) =>{
             }
         }
     }
+    //Return the array of planted seeds/
     return usePlants()
 }

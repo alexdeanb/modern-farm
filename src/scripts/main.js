@@ -1,5 +1,3 @@
-console.log("Welcome to the main module")
-
 import { createPlan } from "./plan.js"
 import { plantSeeds } from "./tractor.js"
 import { harvestPlants } from "./harvester.js"
@@ -15,5 +13,4 @@ let plan = createPlan()
 
 let plantedField = plantSeeds(plan)
 let harvest = harvestPlants(plantedField)
-console.log(harvest)
 let catalogSite = catalog(harvest)
